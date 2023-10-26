@@ -4,8 +4,9 @@ import axios from 'axios';
 import { BASE_URL } from '../../constants/url';
 import { MovieInterface } from '../../interface/moviesInterface';
 import { Box, Heading, HStack, Image, Text, VStack } from '@chakra-ui/react';
+import { options } from '../../Header/Header';
 
-function Home(): JSX.Element {
+function Home() {
   const [data, setData] = useState<MovieInterface[]>([]);
   const [hoveredMovie, setHoveredMovie] = useState<number | null>(null);
 
@@ -15,7 +16,7 @@ function Home(): JSX.Element {
 
   const fetchData = async (): Promise<void> => {
     try {
-      const movieList = await axios.get(BASE_URL);
+      const movieList = await axios.get(BASE_URL, options);
       setData(movieList.data.results);
     } catch (error) {
       console.log(error);

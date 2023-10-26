@@ -36,5 +36,8 @@ Antes de executar o projeto, certifique-se de ter o Node.js e o Yarn instalados 
 
 A aplicação estará disponível em http://127.0.0.1:5173/ no seu navegador.
 
+A prévia pode ser acessada neste link:
+https://movie-spa-project-git-main-maciosekguilherme.vercel.app/
+
 
    

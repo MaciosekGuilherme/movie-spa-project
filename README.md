@@ -1,27 +1,40 @@
-# React + TypeScript + Vite
+# Movie List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O Movie List App é uma aplicação web simples desenvolvida em React que exibe uma lista de filmes populares a partir da API do The Movie Database (TMDb). A aplicação oferece uma interface amigável para visualizar informações sobre os filmes, incluindo seus títulos e pôsteres. Além disso, quando o cursor do mouse passa sobre um filme, o título do filme é exibido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Axios**: Uma biblioteca para fazer requisições HTTP.
+- **Chakra UI**: Uma biblioteca de componentes para estilização e design.
+- **The Movie Database (TMDb) API**: Uma API para obter informações sobre filmes e programas de TV.
 
-- Configure the top-level `parserOptions` property like this:
+## Pré-requisitos
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Antes de executar o projeto, certifique-se de ter o Node.js e o Yarn instalados em sua máquina.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instalação e Uso
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/movie-spa-project.git
+
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd movie-spa
+
+3. Instale as depêncicias com o Yarn:
+   ```bash
+   yarn install
+
+4. Inicie o projeto:
+   ```bash
+   yarn dev
+
+A aplicação estará disponível em http://127.0.0.1:5173/ no seu navegador.
+
+
+   

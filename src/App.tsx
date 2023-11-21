@@ -1,12 +1,13 @@
-import { ChakraProvider } from '@chakra-ui/react'
 import Home from './Pages/Home/home'
+import './App.css'
+import React from 'react'
 
 function App() {
 
   return (
-    <ChakraProvider>
-      <Home/>
-    </ChakraProvider>
+    <React.StrictMode>
+      <Home />
+    </React.StrictMode>
   )
 }
 

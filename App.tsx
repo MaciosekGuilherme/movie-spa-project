@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga4';
 import Home from './src/Home/home';
-import { Widget } from './src/components/Widget';
 
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
   return (
     <React.StrictMode>
       <Home onButtonClick={trackButtonClick} />
-      <Widget onButtonClick={trackButtonClick} />
     </React.StrictMode>
   );
 }

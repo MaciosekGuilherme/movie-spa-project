@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga4';
-import Home from './src/Home/home';
+import { Home } from './src/Pages/Home/Home';
 
 
 function App() {

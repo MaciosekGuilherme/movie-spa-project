@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BASE_URL } from '../constants/url';
-import { MovieInterface } from '../interface/MovieInterface';
-import { options } from '../Header/Header';
-import { Widget } from '../components/Widget';
+import { BASE_URL } from '../../constants/url';
+import { MovieInterface } from '../../interface/MovieInterface';
+import { options } from '../../Header/Header';
+import { Widget } from '../../components/Widget';
+import { Sidebar } from '../Sidebar/Sidebar';
 
 
 interface HomeProps {
   onButtonClick: () => void;
 }
 
-function Home({ onButtonClick }: HomeProps) {
+export function Home({ onButtonClick }: HomeProps) {
   const [data, setData] = useState<MovieInterface[]>([]);
   const [hoveredMovie, setHoveredMovie] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +35,8 @@ function Home({ onButtonClick }: HomeProps) {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative flex">
+      <Sidebar onButtonClick={onButtonClick} />
       <div className="flex flex-col items-center min-h-screen bg-gray-800 p-4 rounded-md">
         <h1 className="text-teal-400 text-2xl mb-4">Lista de Filmes</h1>
         {isLoading ? (
@@ -64,5 +66,3 @@ function Home({ onButtonClick }: HomeProps) {
     </div>
   );
 }
-
-export default Home;
